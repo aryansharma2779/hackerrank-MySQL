@@ -1,0 +1,1 @@
+select co.continent,floor(avg(c.population)) from city as c inner join country as co on c.CountryCode= co.Code group by co.continent;
